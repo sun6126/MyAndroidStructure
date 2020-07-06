@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.qi.myandroidstructure">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--        <activity android:name=".okhttp.OkhttpActivity"></activity>-->
+        <activity android:name=".seniorJava.SeniorJavaActivity"></activity>
+        <!-- <activity android:name=".okhttp.OkhttpActivity"></activity> -->
         <!-- <activity android:name=".selfRxjava.RxJavaActivity"></activity> -->
         <activity android:name=".selfEventBus.EventBusActivity" />
         <activity android:name=".okhttp.OkhttpActivity">

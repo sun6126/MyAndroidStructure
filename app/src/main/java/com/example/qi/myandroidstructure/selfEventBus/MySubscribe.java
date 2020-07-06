@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MySubscribe {
-    MyThreadMode threadMode() default MyThreadMode.POSTING;
+    MyThreadMode threadMode() default MyThreadMode.POSTING; // 表明此注解可以指定参数，default 表示默认使用后面这个参数
 }
