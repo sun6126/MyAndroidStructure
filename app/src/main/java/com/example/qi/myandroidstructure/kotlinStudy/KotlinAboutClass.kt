@@ -11,7 +11,28 @@ fun main() {
     student.address = "north"
     println(student.address)
 
+    Singleton.test()
+
 }
+
+/*
+* 单例类
+* 把 class 关键字改成 object即可（但是这种单例无法传参进来，可以使用 companion object）
+* */
+object Singleton{
+    // 调用方法，直接类名.方法  和Java中的静态使用一样
+    fun test(){
+        println("test singleton")
+    }
+}
+
+/*
+* 数据类
+* 在class 之前 加上 data 关键字
+* kotlin就会根据柱构造函数中的参数帮你将equals()、hashCode()、toString()等固定的且无实际逻辑意义的方法自动生成
+* */
+data class CellPhone(val brand:String,val price:Double)
+
 
 // 在柱构造函数中声明的 var和val 会被当成当前类的成员变量
 class Student(val sno: String, val grade: Int, name: String, age: Int) : Person(name, age) {
