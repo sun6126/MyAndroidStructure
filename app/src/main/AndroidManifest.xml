@@ -11,11 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".seniorJava.SeniorJavaActivity"></activity>
+<!--        <activity android:name=".IOC.IocActivity"></activity>-->
+<!--        <activity android:name=".seniorJava.SeniorJavaActivity" /> -->
         <!-- <activity android:name=".okhttp.OkhttpActivity"></activity> -->
         <!-- <activity android:name=".selfRxjava.RxJavaActivity"></activity> -->
         <activity android:name=".selfEventBus.EventBusActivity" />
-        <activity android:name=".okhttp.OkhttpActivity">
+        <activity android:name=".IOC.IocActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
