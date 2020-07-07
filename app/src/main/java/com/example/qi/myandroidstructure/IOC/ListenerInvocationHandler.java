@@ -3,6 +3,9 @@ package com.example.qi.myandroidstructure.IOC;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+/*
+* 将被代理类和代理方法做一个封装
+* */
 public class ListenerInvocationHandler implements InvocationHandler {
     Object activity;
     Method activityMethod;
