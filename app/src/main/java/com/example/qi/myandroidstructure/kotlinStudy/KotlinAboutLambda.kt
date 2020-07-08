@@ -1,7 +1,9 @@
 package com.example.qi.myandroidstructure.kotlinStudy
 
 fun main() {
-
+    println(newStr)
+    println(newStr2)
+    println(newStr3)
 }
 
 // kotlin中，
@@ -24,3 +26,52 @@ fun foStudy(study: Study?){
         it.readBooks()
     }
 }
+
+/*
+* with函数
+* 最后一行作为函数返回值
+* 函数体持有该对象的上下文
+* */
+var str:String = "testWith"
+val newStr = with(str){
+    this + "001"
+}
+
+/*
+* run函数
+* 效果同上，但是使用方法不一样
+* */
+val newStr2 = str.run {
+    this + "002"
+}
+
+/*
+*  apply函数
+*  无法指定返回值，默认返回原对象
+* */
+var newStr3 = str.apply {
+    this + "003"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

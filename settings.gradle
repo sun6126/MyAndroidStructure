@@ -1,3 +1,5 @@
 rootProject.name='MyAndroidStructure'
 include ':app'
 include ':isolation_processor'
+include ':annotation'
+include ':annotation_compiler'
