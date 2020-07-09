@@ -1,17 +1,8 @@
 package com.example.qi.myandroidstructure.kotlinStudy
 
 fun main() {
-//    val person = Person()
-//    person.name = "jack"
-//    person.age = 20
-//    person.eat()
-
-    // 新建student对象
-    val student = Student("test")
-    student.address = "north"
-    println(student.address)
-
-    Singleton.test()
+    Student.doAction01()
+    Student.doAction02()
 
 }
 
@@ -19,9 +10,9 @@ fun main() {
 * 单例类
 * 把 class 关键字改成 object即可（但是这种单例无法传参进来，可以使用 companion object）
 * */
-object Singleton{
+object Singleton {
     // 调用方法，直接类名.方法  和Java中的静态使用一样
-    fun test(){
+    fun test() {
         println("test singleton")
     }
 }
@@ -31,11 +22,29 @@ object Singleton{
 * 在class 之前 加上 data 关键字
 * kotlin就会根据柱构造函数中的参数帮你将equals()、hashCode()、toString()等固定的且无实际逻辑意义的方法自动生成
 * */
-data class CellPhone(val brand:String,val price:Double)
+data class CellPhone(val brand: String, val price: Double)
 
 
 // 在柱构造函数中声明的 var和val 会被当成当前类的成员变量
 class Student(val sno: String, val grade: Int, name: String, age: Int) : Person(name, age) {
+
+    /*
+    * 类似于静态方法的使用
+    * */
+    companion object {
+        fun doAction01() {
+            println("test companion object")
+        }
+
+        // 真正的 static方法（只能在 companion object中或者 单例类中定义）
+        // 可以在 java 代码中以静态方式调用
+        @JvmStatic
+        fun doAction02() {
+            println("test static")
+        }
+
+    }
+
     // 私有变量的get set
     var address: String? = null
         get() = field

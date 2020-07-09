@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import com.example.qi.myandroidstructure.R
 import com.example.qi.myandroidstructure.model.Friend
+import kotlinx.android.synthetic.main.activity_event_bus.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class EventBusActivity : AppCompatActivity() {
@@ -17,7 +18,7 @@ class EventBusActivity : AppCompatActivity() {
     }
 
 
-    private fun initListener() {
+    public fun initListener() {
         btnPostEvent.setOnClickListener {
             MyEventBus.post(Friend(20,"xiaoshuai"))
         }

@@ -4,14 +4,12 @@
 //import com.google.auto.service.AutoService;
 //
 //import java.io.IOException;
-//import java.io.OutputStream;
 //import java.io.Writer;
 //import java.util.ArrayList;
 //import java.util.HashMap;
 //import java.util.HashSet;
 //import java.util.Iterator;
 //import java.util.List;
-//import java.util.Map;
 //import java.util.Set;
 //
 //import javax.annotation.processing.AbstractProcessor;
@@ -54,8 +52,6 @@
 //    }
 //
 //    // 3、支持JDK的版本
-//
-//
 //    @Override
 //    public SourceVersion getSupportedSourceVersion() {
 //        return SourceVersion.latestSupported();
@@ -66,8 +62,6 @@
 //     * */
 //    @Override
 //    public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
-//
-//
 //        /*
 //         *  类元素 TypeElement
 //         *  可执行元素  ExecutableElement
@@ -152,9 +146,7 @@
 //            }
 //
 //        }
-//
-//
-//        return false;
+//        return true;
 //    }
 //}
 //

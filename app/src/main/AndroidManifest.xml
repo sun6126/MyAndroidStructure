@@ -12,15 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".myButterKnife.MyButterKnifeTestActivity"></activity>
-        <!-- <activity android:name=".canaryLeak.LeakTestActivity"></activity> -->
+<!--        <activity android:name=".di.DiActivity"></activity>-->
+<!--        <activity android:name=".myButterKnife.MyButterKnifeTestActivity" /> &lt;!&ndash; <activity android:name=".canaryLeak.LeakTestActivity"></activity> &ndash;&gt;-->
         <!-- <activity android:name="com.example.qi.myandroidstructure.mvp.activities.ShowGirlActivity"></activity> -->
         <!-- <activity android:name=".IOC.IocActivity"></activity> -->
         <!-- <activity android:name=".seniorJava.SeniorJavaActivity" /> -->
         <!-- <activity android:name=".okhttp.OkhttpActivity"></activity> -->
         <!-- <activity android:name=".selfRxjava.RxJavaActivity"></activity> -->
         <!-- <activity android:name=".selfEventBus.EventBusActivity" /> -->
-        <activity android:name=".canaryLeak.LeakTestActivity">
+        <activity android:name=".di.DiActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

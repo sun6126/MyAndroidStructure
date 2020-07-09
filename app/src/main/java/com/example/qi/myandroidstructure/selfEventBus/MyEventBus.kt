@@ -6,7 +6,7 @@ import kotlin.collections.HashMap
 /*
 * 单例模式
 * */
-object MyEventBus {
+object MyEventBus { // 运行时反射原理
 
     // 缓存观察者中所有方法
     var cacheMap = HashMap<Any, ArrayList<SubscriberMethod>>()

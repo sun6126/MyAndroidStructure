@@ -49,5 +49,11 @@ dependencies {
     debugApi 'com.squareup.leakcanary:leakcanary-android:1.6.2'
     releaseApi 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.2'
 
+    // 顶部自定义tab
+    implementation 'com.github.dacaoyuan:YPKTabDemo:1.0.2'
+
+    // dagger2
+    api 'com.google.dagger:dagger:2.10'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
 
 }
