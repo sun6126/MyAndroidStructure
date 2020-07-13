@@ -17,8 +17,8 @@ class JetpackActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         // 增加监听方法耗时的文件
-        val file = File(Environment.getExternalStorageState(), "app.trace")
-        Debug.startMethodTracing(file.absolutePath)
+//        val file = File(Environment.getExternalStorageState(), "app.trace")
+//        Debug.startMethodTracing(file.absolutePath)
 
         setContentView(R.layout.activity_jetpack)
         lifecycle.addObserver(MyLifeObserver()) // 添加生命周期监听者
@@ -27,7 +27,7 @@ class JetpackActivity : AppCompatActivity() {
         initListener()
 
         // 结束方法监听
-        Debug.stopMethodTracing()
+//        Debug.stopMethodTracing()
     }
 
     private fun initListener() {

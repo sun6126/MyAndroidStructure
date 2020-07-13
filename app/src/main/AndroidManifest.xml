@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--        <activity android:name=".jetpack.JetpackActivity"></activity>-->
+        <!--        <activity android:name=".jetpack.JetpackActivity"></activity>-->
         <!-- <activity android:name=".di.DiActivity"></activity> -->
         <!-- <activity android:name=".myButterKnife.MyButterKnifeTestActivity" /> &lt;!&ndash; <activity android:name=".canaryLeak.LeakTestActivity"></activity> &ndash;&gt; -->
         <!-- <activity android:name="com.example.qi.myandroidstructure.mvp.activities.ShowGirlActivity"></activity> -->
