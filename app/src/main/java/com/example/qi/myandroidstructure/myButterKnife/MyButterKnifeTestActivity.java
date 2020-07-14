@@ -10,6 +10,10 @@ import com.example.qi.myandroidstructure.R;
 
 public class MyButterKnifeTestActivity extends AppCompatActivity {
 
+    /*
+     *  在编译时来注入这些，就无需使用反射
+     *  性能大大提高
+     * */
     @BinderView(R.id.tv_test)
     TextView tvTest;
 
@@ -18,5 +22,6 @@ public class MyButterKnifeTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_butter_knife);
         MyButterKnife.bind(this);
+        tvTest.setText("已经被绑定了");
     }
 }

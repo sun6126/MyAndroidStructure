@@ -58,9 +58,9 @@ public class InjectUtils {
 
                         // 通过反射拿到id，再根据id得到view
                         try {
-                            // 得到第一层注解上的方法
+                            // 得到第一层注解里声明的方法
                             Method method1 = annotationType.getDeclaredMethod("value");
-                            // 得到注解里声明的viewId
+                            // 反射得到注解里声明的viewId
                             int[] viewIds = (int[]) method1.invoke(annotation);
                             // 对每一个id进行事件绑定
                             for (int viewId : viewIds) {
@@ -77,7 +77,7 @@ public class InjectUtils {
                                         new ListenerInvocationHandler(context, declaredMethod); // 这个declareMethod就是activity中的onclik方法，传入到代理类中
                                 Object proxyInstance = Proxy.newProxyInstance(listenerType.getClassLoader(),
                                         new Class[]{listenerType}, listenerInvocationHandler);
-                                // 执行方法
+                                // 执行监听方法
                                 Method setListenerMethod = view.getClass().getMethod(listenerSetter, listenerType);
                                 setListenerMethod.invoke(view,proxyInstance);
                             }
