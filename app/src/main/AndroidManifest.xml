@@ -12,16 +12,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--        <activity android:name=".jetpack.JetpackActivity"></activity>-->
+        <activity
+            android:name=".activityLife.ThirdActivity"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".activityLife.SecondActivity"
+            android:launchMode="singleTask" />
+        <!--        <activity android:name=".activityLife.FirstActivity" /> -->
+        <!-- <activity android:name=".jetpack.JetpackActivity"></activity> -->
         <!-- <activity android:name=".di.DiActivity"></activity> -->
-        <!-- <activity android:name=".myButterKnife.MyButterKnifeTestActivity" /> &lt;!&ndash; <activity android:name=".canaryLeak.LeakTestActivity"></activity> &ndash;&gt; -->
+        <!-- <activity android:name=".myButterKnife.MyButterKnifeTestActivity" /> &lt;!&ndash;
+        <activity android:name=".canaryLeak.LeakTestActivity"></activity> &ndash;&gt; -->
         <!-- <activity android:name="com.example.qi.myandroidstructure.mvp.activities.ShowGirlActivity"></activity> -->
         <!-- <activity android:name=".IOC.IocActivity"></activity> -->
         <!-- <activity android:name=".seniorJava.SeniorJavaActivity" /> -->
         <!-- <activity android:name=".okhttp.OkhttpActivity"></activity> -->
         <!-- <activity android:name=".selfRxjava.RxJavaActivity"></activity> -->
         <!-- <activity android:name=".selfEventBus.EventBusActivity" /> -->
-        <activity android:name=".myButterKnife.MyButterKnifeTestActivity">
+        <activity
+            android:name=".activityLife.FirstActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

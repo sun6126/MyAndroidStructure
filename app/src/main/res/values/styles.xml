@@ -14,4 +14,9 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+
+    <style name="OptAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
 </resources>

@@ -16,9 +16,8 @@ class OkhttpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_okhttp)
-
         // 简单使用
-       /* val client = OkHttpClient.Builder().addInterceptor(object : Interceptor {
+        val client = OkHttpClient.Builder().addInterceptor(object : Interceptor {
             override fun intercept(chain: Interceptor.Chain): Response {
                 val request = chain.request()
                 Log.e("okhttp", request.url().toString())
@@ -43,8 +42,6 @@ class OkhttpActivity : AppCompatActivity() {
             })
         } catch (e: Exception) {
             e.printStackTrace()
-        }*/
-
-
+        }
     }
 }

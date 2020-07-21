@@ -19,5 +19,10 @@ public class Test {
         HelloInterface helloInterface = (HelloInterface) Proxy.newProxyInstance(hello.getClass().getClassLoader(),
                 hello.getClass().getInterfaces(), proxyHandler);
         helloInterface.sayHello();
+
+//        byte[] bytes = "testabca".getBytes();
+//        for (int i = 0;i<bytes.length;i++){
+//            System.out.println(bytes[i]);
+//        }
     }
 }

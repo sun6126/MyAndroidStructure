@@ -19,6 +19,4 @@ public class BasePresenter<T extends IGirlView> {
             iGirlView = null;
         }
     }
-
-
 }

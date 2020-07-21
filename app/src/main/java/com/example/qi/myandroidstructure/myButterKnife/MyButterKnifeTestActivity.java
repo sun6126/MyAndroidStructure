@@ -22,6 +22,5 @@ public class MyButterKnifeTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_butter_knife);
         MyButterKnife.bind(this);
-        tvTest.setText("已经被绑定了");
     }
 }

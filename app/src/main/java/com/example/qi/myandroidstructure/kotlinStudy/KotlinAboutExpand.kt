@@ -30,7 +30,6 @@ fun String.lettersCount(): Int {
 * 必须加上operator
 * */
 class Money(val value: Int) {
-
     // 定义 “+” 运算符重载，实现 两个money对象相加
     operator fun plus(money: Money): Money {
         val sum = value + money.value
@@ -42,9 +41,6 @@ class Money(val value: Int) {
         val sum = value + number
         return Money(sum)
     }
-
-
-
 }
 
 /*
