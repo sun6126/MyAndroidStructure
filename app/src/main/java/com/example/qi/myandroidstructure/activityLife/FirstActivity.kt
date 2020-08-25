@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import com.example.qi.myandroidstructure.R
 import kotlinx.android.synthetic.main.activity_first.*
 
@@ -17,8 +16,6 @@ class FirstActivity : AppCompatActivity() {
 
         btnStartSecond.setOnClickListener {
             startActivity(Intent(this@FirstActivity,SecondActivity::class.java))
-            Toast.makeText(this,"这是测试分支1", Toast.LENGTH_SHORT).show()
-            Log.e("test1","test1")
         }
     }
 
